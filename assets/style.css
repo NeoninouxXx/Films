@@ -1,0 +1,89 @@
+body {
+  height: 100vh;
+  background-color: lightgray;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.inputs {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+input {
+  width: 45%;
+  min-width: 350px;
+  padding: 15px;
+}
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  padding: 20px 20px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+table {
+  width: 100%;
+}
+thead {
+  background-color: bisque;
+  color: black;
+}
+th {
+  width: 33%;
+}
+tbody {
+  background-color: white;
+}
+
+.deleted {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30px;
+}
+td {
+  text-align: center;
+}
+
+.error{
+  width: 100%;
+  height: 10%;
+  background-color: red;
+  color: black;
+  text-align: center;
+}
+.success{
+  width: 100%;
+  height: 10%;
+  background-color: green;
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Gestion de films</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="alerte"></div>
+      <h1>Gestion de films</h1>
+      <form class="formFilms">
+        <div class="inputs">
+          <label for="titre">Titre</label>
+          <input type="text" id="titre" />
+        </div>
+        <div class="inputs">
+          <label for="acteur">Acteur</label>
+          <input type="text" id="acteur" />
+        </div>
+        <div class="inputs">
+          <label for="année">Année</label>
+          <input type="text" id="année" />
+        </div>
+        <button class="validé">Valider</button>
+      </form>
+      <hr />
+      <table class="filmListe">
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Acteurs</th>
+            <th>Année</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
