@@ -73,17 +73,30 @@ td {
   text-align: center;
 }
 
-.error{
+.error {
   width: 100%;
   height: 10%;
   background-color: red;
   color: black;
   text-align: center;
+  animation-name: app;
+  animation-duration: 1s;
 }
-.success{
+.success {
   width: 100%;
   height: 10%;
   background-color: green;
   color: black;
   text-align: center;
+  animation-name: app;
+  animation-duration: 1s;
+}
+
+@keyframes app {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
