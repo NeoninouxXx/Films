@@ -16,8 +16,9 @@ class Film {
                       <td>${this.année}</td>
                       <td><button class="deleted">X</td>`;
     tbody.appendChild(row);
+    return true;
   }
-  clearField(film) {
+  clearField() {
     document.getElementById("titre").value = "";
     document.getElementById("acteur").value = "";
     document.getElementById("année").value = "";
@@ -36,7 +37,6 @@ formFilms.addEventListener("submit", (e) => {
   const année = document.getElementById("année").value;
 
   const film = new Film(titre, acteur, année);
-
   if (titre === "" || acteur === "" || année === "") {
     const alert = document.createElement(`div`);
     alert.innerHTML = `<p class="error"> Erreur de saissi </p>`;
@@ -44,9 +44,10 @@ formFilms.addEventListener("submit", (e) => {
     setTimeout(() => {
       alert.remove();
     }, 3000);
+    return false;
   } else {
     film.adFilmToList(film);
-    film.clearField(film);
+    film.clearField();
     const alert = document.createElement(`div`);
     alert.innerHTML = `<p class="success"> Film ajouté avec sucess! </p>`;
     container.appendChild(alert);
@@ -57,7 +58,6 @@ formFilms.addEventListener("submit", (e) => {
 });
 
 filmListe.addEventListener("click", (e) => {
-  const film = new Film();
-  film.deletedFilm(e.target);
+  const filmDeleted = new Film();
+  filmDeleted.deletedFilm(e.target);
 });
-
